@@ -460,12 +460,29 @@ img { max-width: 100%; display: block; }
    PAGE HERO (inner pages)
    =========================== */
 .page-hero {
-  padding: 10rem 2rem 4rem;
+  padding: 8rem 2rem 3rem;
   background:
     radial-gradient(ellipse 70% 60% at 50% 50%, #0d1f3c 0%, transparent 70%),
     var(--bg-deep);
   border-bottom: 1px solid var(--border);
   text-align: center;
+}
+
+.about-poster {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+
+  display: block;
+  margin: 1rem auto 0;
+
+  border-radius: 4px;
+
+  border: 1px solid var(--border);
+
+  box-shadow:
+    0 0 40px rgba(74, 158, 255, 0.15),
+    0 0 120px rgba(74, 158, 255, 0.08);
 }
 
 .page-hero-content h1 {
