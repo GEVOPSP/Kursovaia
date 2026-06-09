@@ -332,16 +332,17 @@ img { max-width: 100%; display: block; }
 }
 
 .trailer-wrapper {
-  width: min(1600px, 92vw);
-  aspect-ratio: 21 / 9;
+  max-width: 1400px;
   margin: 0 auto;
-
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
   overflow: hidden;
 
-  border-radius: 8px;
+  border: 1px solid var(--border);
 
   box-shadow:
-    0 0 60px rgba(74,158,255,.12);
+    0 0 60px rgba(74,158,255,.1);
 }
 
 .trailer-wrapper iframe {
