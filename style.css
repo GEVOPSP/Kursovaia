@@ -59,6 +59,15 @@ img { max-width: 100%; display: block; }
   border-bottom-color: var(--border-glow);
 }
 
+.char-portrait {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border);
+}
+
 .nav-logo {
   font-family: var(--font-title);
   font-size: 1.1rem;
