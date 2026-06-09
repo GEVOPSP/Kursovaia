@@ -325,41 +325,19 @@ img { max-width: 100%; display: block; }
 .trailer-wrapper {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+  padding-bottom: 50.625%; /* 16:9 ratio for 900px max */
+  height: 0;
+  overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: 0 0 60px rgba(74, 158, 255, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
 }
 
-.trailer-thumb {
-  display: block;
-  position: relative;
-  line-height: 0;
-}
-
-.trailer-thumb img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: filter .3s;
-}
-
-.trailer-thumb:hover img {
-  filter: brightness(0.7);
-}
-
-.trailer-play {
+.trailer-wrapper iframe {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.9;
-  transition: opacity .3s, transform .3s;
-  filter: drop-shadow(0 0 20px rgba(74, 158, 255, 0.6));
-}
-
-.trailer-thumb:hover .trailer-play {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.1);
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ===========================
@@ -649,70 +627,41 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
-/* Scene placeholders using gradients */
+/* Scene images */
 .scene-1 {
-  background: linear-gradient(135deg, #0a1a2e 0%, #0d2a4a 40%, #1a3a5c 70%, #0a1a2e 100%);
-}
-.scene-1::after {
-  content: '◈ Горный ландшафт';
-  position: absolute; bottom: 10px; left: 10px;
-  font-family: var(--font-title); font-size: 0.6rem; color: var(--accent);
-  letter-spacing: 0.15em; opacity: 0.6;
+  background-image: url('img/screenshot1.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .scene-2 {
-  background: linear-gradient(160deg, #050a14 0%, #0a1e36 50%, #061424 100%);
-}
-.scene-2::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: repeating-linear-gradient(
-    100deg, transparent 0px, transparent 8px,
-    rgba(74,158,255,0.1) 8px, rgba(74,158,255,0.1) 9px
-  );
+  background-image: url('img/screenshot2.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .scene-3 {
-  background: linear-gradient(120deg, #0c1a0c 0%, #0a200a 30%, #152515 60%, #0c2c0c 100%);
-}
-.scene-3::after {
-  content: '';
-  position: absolute; bottom: 0; left: 0; right: 0; height: 40%;
-  background: linear-gradient(to top, rgba(20,80,20,0.3), transparent);
+  background-image: url('img/screenshot3.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .scene-4 {
-  background: linear-gradient(180deg, #02050a 0%, #050d1a 50%, #0a1428 100%);
-}
-.scene-4::before {
-  content: '';
-  position: absolute;
-  top: 30%; left: 40%;
-  width: 120px; height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0.4;
-  box-shadow: 0 0 20px var(--accent);
+  background-image: url('img/screenshot4.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .scene-5 {
-  background: linear-gradient(135deg, #1a0a0a 0%, #2a0a14 40%, #1a0a20 100%);
-}
-.scene-5::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(circle at 50% 40%, rgba(200,80,80,0.2) 0%, transparent 60%);
+  background-image: url('img/screenshot5.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .scene-6 {
-  background: linear-gradient(160deg, #080814 0%, #0e0e2a 50%, #060618 100%);
-}
-.scene-6::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: repeating-linear-gradient(
-    0deg, transparent, transparent 30px,
-    rgba(100,100,200,0.04) 30px, rgba(100,100,200,0.04) 31px
-  );
+  background-image: url('img/screenshot6.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery-caption {
