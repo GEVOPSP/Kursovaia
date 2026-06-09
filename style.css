@@ -469,8 +469,7 @@ img { max-width: 100%; display: block; }
 }
 
 .about-poster {
-  width: 100%;
-  max-width: 1200px;
+  width: min(70%, 900px);
   height: auto;
 
   display: block;
