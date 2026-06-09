@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Галерея — Death Stranding 2</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">DS2</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">Об игре</a></li>
+      <li><a href="gallery.html" class="active">Галерея</a></li>
+      <li><a href="sysreq.html">Системные требования</a></li>
+    </ul>
+    <div class="nav-burger" id="burger">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label">— МЕДИА —</span>
+      <h1>Галерея</h1>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS SECTION -->
+  <section class="gallery-section">
+    <div class="section-header">
+      <span class="section-label">— СКРИНШОТЫ —</span>
+      <h2>Снимки из игры</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Placeholder cards with gradient art representing scenes -->
+      <div class="gallery-card" data-index="0">
+        <div class="gallery-img scene-1"></div>
+        <div class="gallery-caption">Сэм на фоне горного ландшафта</div>
+      </div>
+      <div class="gallery-card" data-index="1">
+        <div class="gallery-img scene-2"></div>
+        <div class="gallery-caption">Путешествие сквозь дождь смерти</div>
+      </div>
+      <div class="gallery-card" data-index="2">
+        <div class="gallery-img scene-3"></div>
+        <div class="gallery-caption">Побережье: встреча с неизведанным</div>
+      </div>
+      <div class="gallery-card" data-index="3">
+        <div class="gallery-img scene-4"></div>
+        <div class="gallery-caption">Ночной переход через равнину</div>
+      </div>
+      <div class="gallery-card" data-index="4">
+        <div class="gallery-img scene-5"></div>
+        <div class="gallery-caption">Fragile перед порталом</div>
+      </div>
+      <div class="gallery-card" data-index="5">
+        <div class="gallery-img scene-6"></div>
+        <div class="gallery-caption">Заброшенный город в тумане</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lb-close">✕</button>
+    <button class="lightbox-prev" id="lb-prev">‹</button>
+    <div class="lightbox-img-wrap">
+      <div class="lightbox-img" id="lb-img"></div>
+      <p class="lightbox-caption" id="lb-caption"></p>
+    </div>
+    <button class="lightbox-next" id="lb-next">›</button>
+  </div>
+
+  <!-- TRAILER IN GALLERY TOO -->
+  <section class="trailer-section">
+    <div class="section-header">
+      <span class="section-label">— ВИДЕО —</span>
+      <h2>Трейлер игры</h2>
+    </div>
+    <div class="trailer-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/dBpDCbMhFKY"
+        title="Death Stranding 2 Trailer"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">DEATH STRANDING 2</div>
+    <p>© 2025 Kojima Productions. Учебный проект.</p>
+    <nav class="footer-nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Об игре</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="sysreq.html">Системные требования</a>
+    </nav>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
