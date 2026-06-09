@@ -335,11 +335,10 @@ img { max-width: 100%; display: block; }
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 50.625%; /* 16:9 ratio for 900px max */
-  height: 0;
-  overflow: hidden;
+  aspect-ratio: 16 / 9;
   border: 1px solid var(--border);
   box-shadow: 0 0 60px rgba(74, 158, 255, 0.1);
+  overflow: hidden;
 }
 
 .trailer-wrapper iframe {
@@ -347,6 +346,7 @@ img { max-width: 100%; display: block; }
   top: 0; left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 /* ===========================
